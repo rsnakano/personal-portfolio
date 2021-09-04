@@ -3,6 +3,12 @@
 }
 
 /* Start of CSS for the main part of portfolio */
+.particles {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    left: 0;
+}
 
 .main {
     height: 100vh;
@@ -15,6 +21,7 @@
 .main-box {
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .main-box div {

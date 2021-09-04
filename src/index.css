@@ -2,3 +2,7 @@
   font-family: 'Alata';
   src: local('Alata'), url(./resources/fonts/Alata-Regular.ttf) format('truetype');
 }
+
+body {
+  margin: 0;
+}

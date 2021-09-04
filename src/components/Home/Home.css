@@ -55,3 +55,33 @@
 }
 
 /* End of CSS for the main part of portfolio */
+
+.about {
+    background-image: url("../../resources/comp-bg.png");
+    background-size: cover;
+}
+
+.carousel div {
+    width: 60%;
+    margin: 0 auto;
+    padding: 16px 0 32px 0;
+}
+
+.carousel div ul {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    line-height: 300%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tech-stack ul li div img {
+    width: 10%;
+}
+
+.skills ul li div  {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}

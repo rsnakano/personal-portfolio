@@ -62,7 +62,7 @@
 }
 
 .carousel div {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     padding: 16px 0 32px 0;
 }
@@ -76,8 +76,16 @@
     font-weight: bold;
 }
 
-.tech-stack ul li div img {
-    width: 10%;
+.carousel .tech-stack ul li img {
+    height: 50px;
+    width: 50px;
+}
+
+.tech-stack ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
 }
 
 .skills ul li div  {

@@ -4,7 +4,12 @@ import ProgressBar from '@ramonak/react-progress-bar'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
 import profpic from '../../resources/profpic.png'
-import android from '../../resources/android.png'
+import android from '../../resources/android-icon.png'
+import react from '../../resources/reactjs-icon.png'
+import github from '../../resources/git-icon.png'
+import algo from '../../resources/algo-icon.png'
+import cpu from '../../resources/cpu-icon.png'
+
 
 const Home = () => {
     return (
@@ -44,24 +49,29 @@ const Home = () => {
                 </div>
             </div>
             <div className='about'>
-                <Carousel className='carousel' showStatus={false} infiniteLoop={true} showThumbs={false} useKeyboardArrows={true}>
+                <Carousel className='carousel' showStatus={false} infiniteLoop={true} showThumbs={false} useKeyboardArrows={true} autoPlay>
                     <div className='tech-stack'>
                         <h2>&lt;My Tech Stack /&gt;</h2>
                         <ul>
                             <li>
                                 <span>Android Development</span>
+                                <img src={android} alt='android icon'/>
                             </li>
                             <li>
                                 <span>Front-End Web Development</span>
+                                <img src={react} alt='reactjs icon'/>
                             </li>
                             <li>
                                 <span>Git & Version Control</span>
+                                <img src={github} alt='github icon'/>
                             </li>
                             <li>
                                 <span>Data Structures & Algorithms</span>
+                                <img src={algo} alt='tree structure icon'/>
                             </li>
                             <li>
                                 <span>MIPS Assembly</span>
+                                <img src={cpu} alt='cpu icon'/>
                             </li>
                         </ul>
                     </div>
@@ -152,6 +162,9 @@ const Home = () => {
                         </p>
                     </div>
                 </Carousel>
+            </div>
+            <div className='projects'> 
+                
             </div>
          </div> // container end
     )

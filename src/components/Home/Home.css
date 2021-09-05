@@ -56,6 +56,8 @@
 
 /* End of CSS for the main part of portfolio */
 
+/* Start of CSS for the about part of portfolio */
+
 .about {
     background-image: url("../../resources/comp-bg.png");
     background-size: cover;
@@ -93,3 +95,29 @@
     padding: 0;
     margin: 0;
 }
+
+/* End of CSS for the about part of portfolio */
+
+/* Start of CSS for the projects part of portfolio */
+
+.projects {
+    background-image: linear-gradient(to bottom, #000000 50%, #ffffff 50%);
+    padding-top: 64px;
+    text-align: center;
+    
+}
+
+.projects .proj-heading {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 64px;
+    margin: 0 96px 64px;
+}
+
+/* End of CSS for the projects part of portfolio */

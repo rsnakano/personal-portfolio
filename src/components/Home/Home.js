@@ -1,6 +1,7 @@
 import Particles from 'react-particles-js'
 import { Carousel } from 'react-responsive-carousel'
 import ProgressBar from '@ramonak/react-progress-bar'
+import ProjectCard from '../ProjectCard/ProjectCard'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
 import profpic from '../../resources/profpic.png'
@@ -149,7 +150,7 @@ const Home = () => {
                             for Web and Android—and
                             an unquenchable thirst for learning.
                             My hobbies include watching movies and
-                            tv shows, writing fiction, and playing
+                            tv shows, playing video games, writing fiction, and playing
                             basketball, among other things. When I'm
                             not typing away at a keyboard, I'm trying
                             learning Japanese (and ultimately struggling), 
@@ -164,7 +165,32 @@ const Home = () => {
                 </Carousel>
             </div>
             <div className='projects'> 
-                
+                <h2 className='proj-heading'>&lt;Projects /&gt;</h2>
+                <div className='project-list'>
+                    <ProjectCard title='Form Management System' 
+                    desc='An Android app prototype made for an international business-faced company
+                    during my internship. Developed using Kotlin and Android XML, utilizing 
+                    libraries such as Retrofit, OkHttp, and Kotlin Coroutines.'
+                    image={profpic}
+                    link='http://rsnakano.surge.sh/' />
+                    <ProjectCard title='Online Portfolio' 
+                    desc='A fully front-end personal portfolio to showcase my skills, projects, and articles 
+                    related to my tech journey. Developed using HTML/CSS and JavaScript, utilizing
+                    the ReactJS framework.'
+                    image={profpic}
+                    link='https://github.com/rsnakano/personal-portfolio' />
+                    <ProjectCard title='Memories' 
+                    desc='A &#39;Notes&#39;-style Android app that was made for the purpose of writing down the 
+                    biggest part of your day, and how it felt. Developed using Kotlin and Android XML.'
+                    image={profpic}
+                    link='https://github.com/rsnakano/memories-app' />
+                    <ProjectCard title='Pikachu Translator' 
+                    desc='A small and fun Twitter bot that translates tweets into pikachu&#39;s 
+                    &#39;language&#39;, which is basically just a bunch of random &#39;pika-pika&#39;s. 
+                    Made with Python and the Tweepy API.'
+                    image={profpic}
+                    link='https://twitter.com/pikatranslate' />
+                </div>
             </div>
          </div> // container end
     )

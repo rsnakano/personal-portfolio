@@ -11,6 +11,12 @@ import react from '../../resources/reactjs-icon.png'
 import github from '../../resources/git-icon.png'
 import algo from '../../resources/algo-icon.png'
 import cpu from '../../resources/cpu-icon.png'
+import fms from '../../resources/fms-app.jpg'
+import portfolio from '../../resources/portfolio.PNG'
+import memories from '../../resources/memories-app.jpg'
+import pikabot from '../../resources/pikabot.PNG'
+import istartup from '../../resources/istartup.png'
+import mipscode from '../../resources/mips-code.PNG'
 
 
 const Home = () => {
@@ -176,34 +182,48 @@ const Home = () => {
                         desc='An Android app prototype made for an international business-faced company
                         during my internship. Developed using Kotlin and Android XML, utilizing 
                         libraries such as Retrofit, OkHttp, and Kotlin Coroutines.'
-                        image={profpic}
-                        link='http://rsnakano.surge.sh/' />
+                        image={fms}
+                        link='none' />
 
                         <ProjectCard title='Online Portfolio' 
                         desc='A fully front-end personal portfolio to showcase my skills, projects, and articles 
                         related to my tech journey. Developed using HTML/CSS and JavaScript, utilizing
                         the ReactJS framework.'
-                        image={profpic}
+                        image={portfolio}
                         link='https://github.com/rsnakano/personal-portfolio' />
 
                         <ProjectCard title='Memories' 
                         desc='A &#39;Notes&#39;-style Android app that was made for the purpose of writing down the 
                         biggest part of your day, and how it felt. Developed using Kotlin and Android XML.'
-                        image={profpic}
+                        image={memories}
                         link='https://github.com/rsnakano/memories-app' />
 
                         <ProjectCard title='Pikachu Translator' 
                         desc='A small and fun Twitter bot that translates tweets into pikachu&#39;s 
                         &#39;language&#39;, which is basically just a bunch of random &#39;pika-pika&#39;s. 
                         Made with Python and the Tweepy API.'
-                        image={profpic}
+                        image={pikabot}
                         link='https://twitter.com/pikatranslate' />
+
+                        <ProjectCard title='istartUP' 
+                        desc='A prototype idea proposed by our team during the hackathon of a prominent organization 
+                        in our campus. It aims to help online businesses get started on their journey toward 
+                        financial freedom during trying times.'
+                        image={istartup}
+                        link='https://drive.google.com/drive/folders/1j78_pMiWCbaBGWplRC7d0EPYFEyAaCLj' />
+
+                        <ProjectCard title='Extending MIPS Processor' 
+                        desc='Our final project for a subject that involved extending the functionality of the
+                        MIPS single-cycle processor by way of adding additional insttuctions 
+                        using SystemVerilog and Vivado.'
+                        image={mipscode}
+                        link='none' />
 
                         {/* Add more projects here */}
                     </div>
                 </div>
             </a>
-            
+
             <a id='contact-section'>
                 <div className='contact-me'>
                     <h2>&lt;Contact Me /&gt;</h2>

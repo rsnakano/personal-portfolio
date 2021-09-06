@@ -20,7 +20,7 @@ const Footer = () => {
                     <img src={linkedin} alt='linkedin logo'/>
                 </a>
             </div>
-            <p>Icons by <a href='' target="_blank" 
+            <p>Icons by <a href='https://icons8.com/' target="_blank" 
             rel="noopener noreferrer">icons8</a>
             </p>
             <p>Copyright &copy; 2021 | CC BY-SA</p>

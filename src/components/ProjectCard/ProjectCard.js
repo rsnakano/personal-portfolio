@@ -38,10 +38,10 @@ export default function ProjectCard({ title, desc, image, link }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href={link} target="_blank" 
+        { (link !== 'none') && (<Button href={link} target="_blank" 
         rel="noopener noreferrer" size="small" color="primary">
             Link
-        </Button>
+        </Button>) }
       </CardActions>
     </Card>
   );

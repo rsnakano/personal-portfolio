@@ -2,6 +2,7 @@ import Particles from 'react-particles-js'
 import { Carousel } from 'react-responsive-carousel'
 import ProgressBar from '@ramonak/react-progress-bar'
 import ProjectCard from '../ProjectCard/ProjectCard'
+import ContactForm from '../ContactForm/ContactForm'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
 import profpic from '../../resources/profpic.png'
@@ -74,6 +75,8 @@ const Home = () => {
                                 <span>MIPS Assembly</span>
                                 <img src={cpu} alt='cpu icon'/>
                             </li>
+
+                            {/* Add more to your tech stack here */}
                         </ul>
                     </div>
                     <div className='skills'>
@@ -133,6 +136,8 @@ const Home = () => {
                                     <ProgressBar completed={15} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
                                 </div>
                             </li>
+
+                            {/* Add more to your languages and frameworks here */}
                         </ul>
                     </div>
                     <div className='about-me'>
@@ -156,41 +161,50 @@ const Home = () => {
                             learning Japanese (and ultimately struggling), 
                             to get in touch with my half-roots.  
                         </p>
-                        <p>
-                            Have I gotten your attention? Have I piqued your
-                            interest? Want to work on something together? Just
-                            send me a message! 
-                        </p>
                     </div>
                 </Carousel>
             </div>
             <div className='projects'> 
                 <h2 className='proj-heading'>&lt;Projects /&gt;</h2>
                 <div className='project-list'>
-                    <ProjectCard title='Form Management System' 
+                    <ProjectCard title='Form Management App' 
                     desc='An Android app prototype made for an international business-faced company
                     during my internship. Developed using Kotlin and Android XML, utilizing 
                     libraries such as Retrofit, OkHttp, and Kotlin Coroutines.'
                     image={profpic}
                     link='http://rsnakano.surge.sh/' />
+
                     <ProjectCard title='Online Portfolio' 
                     desc='A fully front-end personal portfolio to showcase my skills, projects, and articles 
                     related to my tech journey. Developed using HTML/CSS and JavaScript, utilizing
                     the ReactJS framework.'
                     image={profpic}
                     link='https://github.com/rsnakano/personal-portfolio' />
+
                     <ProjectCard title='Memories' 
                     desc='A &#39;Notes&#39;-style Android app that was made for the purpose of writing down the 
                     biggest part of your day, and how it felt. Developed using Kotlin and Android XML.'
                     image={profpic}
                     link='https://github.com/rsnakano/memories-app' />
+
                     <ProjectCard title='Pikachu Translator' 
                     desc='A small and fun Twitter bot that translates tweets into pikachu&#39;s 
                     &#39;language&#39;, which is basically just a bunch of random &#39;pika-pika&#39;s. 
                     Made with Python and the Tweepy API.'
                     image={profpic}
                     link='https://twitter.com/pikatranslate' />
+
+                    {/* Add more projects here */}
                 </div>
+            </div>
+            <div className='contact-me'>
+                <h2>&lt;Contact Me /&gt;</h2>
+                <p>
+                    ...Have I gotten your attention? Have I piqued your
+                    interest? Want to work on something together? Just
+                    send me a message! 
+                </p>
+                <ContactForm />
             </div>
          </div> // container end
     )

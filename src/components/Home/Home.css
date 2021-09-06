@@ -2,6 +2,10 @@
     font-family: 'Alata';
 }
 
+h2 {
+    font-size: 40px;
+}
+
 /* Start of CSS for the main part of portfolio */
 .particles {
     position: absolute;
@@ -109,7 +113,6 @@
 
 .projects .proj-heading {
     color: #ffffff;
-    font-size: 40px;
 }
 
 .project-list {
@@ -121,3 +124,18 @@
 }
 
 /* End of CSS for the projects part of portfolio */
+
+/* Start of CSS for the contacts part of portfolio */
+
+.contact-me {
+    padding: 64px 0;
+    background-color: #ffef00;
+    text-align: center;
+}
+
+.contact-me p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+}

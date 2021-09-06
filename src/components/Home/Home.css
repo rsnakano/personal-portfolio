@@ -7,6 +7,7 @@ h2 {
 }
 
 /* Start of CSS for the main part of portfolio */
+
 .particles {
     position: absolute;
     height: 100vh;
@@ -32,6 +33,7 @@ h2 {
     padding: 16px;
     border-right: 8px solid #ffffff;
     text-align: end;
+    animation: main-box-div-load 1s ease-out;
 }
 
 .main-box div h1 {
@@ -56,6 +58,43 @@ h2 {
     border-right: 10px solid #000000;
     border-left: 10px solid #ffef00;
     border-bottom: 10px solid #ffef00;
+    animation: main-box-img-load 1s ease-out;
+}
+
+@keyframes main-box-div-load {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes main-box-img-load {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 824px) {
+    .main-box {
+        transform: scale(0.50);
+        min-width: 780px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-box {
+        transform: scale(0.25);
+        min-width: 780px;
+    }
 }
 
 /* End of CSS for the main part of portfolio */
@@ -95,10 +134,55 @@ h2 {
 }
 
 .skills ul li div  {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
+
+.skills ul li .skill-wrap  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 1368px) {
+    .carousel div h2 {
+        font-size: 28px;
+    }
+
+    .carousel div ul {
+        font-size: 18px;
+    }
+
+    .carousel .tech-stack ul li img {
+        height: 36px;
+        width: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel div h2 {
+        font-size: 20px;
+    }
+
+    .carousel div ul {
+        font-size: 12px;
+    }
+
+    .carousel .tech-stack ul li img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+/* You might have to do another one for smaller screens*/
+
 
 /* End of CSS for the about part of portfolio */
 
@@ -139,3 +223,5 @@ h2 {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* End of CSS for the contacts part of portfolio */

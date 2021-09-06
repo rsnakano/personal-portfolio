@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel'
 import ProgressBar from '@ramonak/react-progress-bar'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import ContactForm from '../ContactForm/ContactForm'
+import { Fade, Bounce } from 'react-reveal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
 import profpic from '../../resources/profpic.png'
@@ -91,57 +92,57 @@ const Home = () => {
                             <h2>&lt;Languages & Frameworks /&gt;</h2>
                             <ul>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>Python</span>
-                                        <ProgressBar className='progress' completed={85} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={85} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                             </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>Kotlin</span>
-                                        <ProgressBar completed={70} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={70} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>Android XML</span>
-                                        <ProgressBar completed={70} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={70} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>C/C++</span>
-                                        <ProgressBar completed={55} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={55} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>HTML/CSS</span>
-                                        <ProgressBar completed={50} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={50} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>ReactJS</span>
-                                        <ProgressBar completed={50} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={50} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>JavaScript</span>
-                                        <ProgressBar completed={40} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={40} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'> 
                                         <span>MIPS Assembly</span>
-                                        <ProgressBar completed={20} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={20} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
                                 <li>
-                                    <div>
+                                    <div className='skill-wrap'>
                                         <span>MATLAB</span>
-                                        <ProgressBar completed={15} bgColor='#000000' height='16px' width='70%' margin='auto' labelSize='14px' baseBgColor='#ffffff' />
+                                        <ProgressBar completed={15} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
                                     </div>
                                 </li>
 
@@ -175,64 +176,72 @@ const Home = () => {
             </a>
 
             <a id='projects-section'>
-                <div className='projects'> 
-                    <h2 className='proj-heading'>&lt;Projects /&gt;</h2>
-                    <div className='project-list'>
-                        <ProjectCard title='Form Management App' 
-                        desc='An Android app prototype made for an international business-faced company
-                        during my internship. Developed using Kotlin and Android XML, utilizing 
-                        libraries such as Retrofit, OkHttp, and Kotlin Coroutines.'
-                        image={fms}
-                        link='none' />
+                <div className='projects'>
+                    <Fade top> 
+                        <h2 className='proj-heading'>&lt;Projects /&gt;</h2>
+                    </Fade>
+                    <Fade bottom big> 
+                        <div className='project-list'>
+                            <ProjectCard title='Form Management App' 
+                            desc='An Android app prototype made for an international business-faced company
+                            during my internship. Developed using Kotlin and Android XML with MVVM Architecture, 
+                            utilizing libraries such as Retrofit, OkHttp, and Kotlin Coroutines.'
+                            image={fms}
+                            link='none' />
 
-                        <ProjectCard title='Online Portfolio' 
-                        desc='A fully front-end personal portfolio to showcase my skills, projects, and articles 
-                        related to my tech journey. Developed using HTML/CSS and JavaScript, utilizing
-                        the ReactJS framework.'
-                        image={portfolio}
-                        link='https://github.com/rsnakano/personal-portfolio' />
+                            <ProjectCard title='Online Portfolio' 
+                            desc='A fully front-end personal portfolio to showcase my skills, projects, and articles 
+                            related to my tech journey. Developed using HTML/CSS and JavaScript, utilizing
+                            the ReactJS framework.'
+                            image={portfolio}
+                            link='https://github.com/rsnakano/personal-portfolio' />
 
-                        <ProjectCard title='Memories' 
-                        desc='A &#39;Notes&#39;-style Android app that was made for the purpose of writing down the 
-                        biggest part of your day, and how it felt. Developed using Kotlin and Android XML.'
-                        image={memories}
-                        link='https://github.com/rsnakano/memories-app' />
+                            <ProjectCard title='Memories' 
+                            desc='A &#39;Notes&#39;-style Android app that was made for the purpose of writing down the 
+                            biggest part of your day, and how it felt. Developed using Kotlin and Android XML.'
+                            image={memories}
+                            link='https://github.com/rsnakano/memories-app' />
 
-                        <ProjectCard title='Pikachu Translator' 
-                        desc='A small and fun Twitter bot that translates tweets into pikachu&#39;s 
-                        &#39;language&#39;, which is basically just a bunch of random &#39;pika-pika&#39;s. 
-                        Made with Python and the Tweepy API.'
-                        image={pikabot}
-                        link='https://twitter.com/pikatranslate' />
+                            <ProjectCard title='Pikachu Translator' 
+                            desc='A small and fun Twitter bot that translates tweets into pikachu&#39;s 
+                            &#39;language&#39;, which is basically just a bunch of random &#39;pika-pika&#39;s. 
+                            Made with Python and the Tweepy API.'
+                            image={pikabot}
+                            link='https://twitter.com/pikatranslate' />
 
-                        <ProjectCard title='istartUP' 
-                        desc='A prototype idea proposed by our team during the hackathon of a prominent organization 
-                        in our campus. It aims to help online businesses get started on their journey toward 
-                        financial freedom during trying times.'
-                        image={istartup}
-                        link='https://drive.google.com/drive/folders/1j78_pMiWCbaBGWplRC7d0EPYFEyAaCLj' />
+                            <ProjectCard title='istartUP' 
+                            desc='A prototype idea proposed by our team during the hackathon of a prominent organization 
+                            in our campus. It aims to help online businesses get started on their journey toward 
+                            financial freedom during trying times.'
+                            image={istartup}
+                            link='https://drive.google.com/drive/folders/1j78_pMiWCbaBGWplRC7d0EPYFEyAaCLj' />
 
-                        <ProjectCard title='Extending MIPS Processor' 
-                        desc='Our final project for a subject that involved extending the functionality of the
-                        MIPS single-cycle processor by way of adding additional insttuctions 
-                        using SystemVerilog and Vivado.'
-                        image={mipscode}
-                        link='none' />
+                            <ProjectCard title='Extending MIPS Processor' 
+                            desc='Our final project for a subject that involved extending the functionality of the
+                            MIPS single-cycle processor by way of adding additional instructions 
+                            using SystemVerilog and Vivado.'
+                            image={mipscode}
+                            link='none' />
 
-                        {/* Add more projects here */}
-                    </div>
+                            {/* Add more projects here */}
+                        </div>
+                    </Fade>
                 </div>
             </a>
 
             <a id='contact-section'>
                 <div className='contact-me'>
-                    <h2>&lt;Contact Me /&gt;</h2>
+                    <Fade top>
+                        <h2>&lt;Contact Me /&gt;</h2>
+                    </Fade>
                     <p>
                         ...Have I gotten your attention? Have I piqued your
                         interest? Want to work on something together? Just
                         send me a message! 
                     </p>
-                    <ContactForm />
+                    <Bounce bottom>
+                        <ContactForm />
+                    </Bounce>
                 </div>
             </a>
          </div> // container end

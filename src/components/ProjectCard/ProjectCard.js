@@ -38,7 +38,8 @@ export default function ProjectCard({ title, desc, image, link }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href={link} size="small" color="primary">
+        <Button href={link} target="_blank" 
+        rel="noopener noreferrer" size="small" color="primary">
             Link
         </Button>
       </CardActions>

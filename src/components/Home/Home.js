@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel'
 import ProgressBar from '@ramonak/react-progress-bar'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import ContactForm from '../ContactForm/ContactForm'
-import { Fade, Bounce } from 'react-reveal'
+import { Fade } from 'react-reveal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
 import profpic from '../../resources/profpic.png'
@@ -180,7 +180,7 @@ const Home = () => {
                     <Fade top> 
                         <h2 className='proj-heading'>&lt;Projects /&gt;</h2>
                     </Fade>
-                    <Fade bottom big> 
+                    <Fade bottom> 
                         <div className='project-list'>
                             <ProjectCard title='Form Management App' 
                             desc='An Android app prototype made for an international business-faced company
@@ -239,9 +239,9 @@ const Home = () => {
                         interest? Want to work on something together? Just
                         send me a message! 
                     </p>
-                    <Bounce bottom>
+                    <Fade bottom>
                         <ContactForm />
-                    </Bounce>
+                    </Fade>
                 </div>
             </a>
          </div> // container end

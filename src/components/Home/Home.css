@@ -146,7 +146,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
     padding: 0;
     margin: 0 auto;
 }
@@ -168,11 +167,11 @@ h2 {
 
 @media (max-width: 1024px) {
     .carousel div h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .carousel div ul {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .carousel .tech-stack ul li img {
@@ -181,8 +180,20 @@ h2 {
     }
 }
 
-/* You might have to do another one for smaller screens*/
+@media (max-width: 540px) {
+    .carousel div h2 {
+        font-size: 12px;
+    }
 
+    .carousel div ul {
+        font-size: 7px;
+    }
+
+    .carousel .tech-stack ul li img {
+        height: 16px;
+        width: 16px;
+    }
+}
 
 /* End of CSS for the about part of portfolio */
 
@@ -197,6 +208,7 @@ h2 {
 
 .projects .proj-heading {
     color: #ffffff;
+    margin-bottom: 64px;
 }
 
 .project-list {

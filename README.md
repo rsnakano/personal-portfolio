@@ -11,3 +11,11 @@
 </p>
 
 <p align='center'> <img src='./src/resources/portfolio.PNG' alt='main part of site' /></p>
+
+## Color Profile
+
+| Color         | Hex           | 
+|:-------------:|:-------------:| 
+| Canary Yellow | `#ffef00`     |
+| Black         | `#000000`     |
+| White         | `#ffffff`     |  

@@ -3,6 +3,10 @@
   src: local('Alata'), url(./resources/fonts/Alata-Regular.ttf) format('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }

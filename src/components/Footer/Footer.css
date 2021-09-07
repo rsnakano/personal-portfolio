@@ -12,7 +12,7 @@ footer div {
 footer a img {
     height: 40px;
     width: 40px;
-    transition-duration: 400ms;
+    transition-duration: 0.4ms;
 }
 
 footer a img:hover {

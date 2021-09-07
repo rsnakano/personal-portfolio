@@ -1,0 +1,241 @@
+.container {
+    font-family: 'Alata';
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* Start of CSS for the main part of portfolio */
+
+.particles {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    left: 0;
+}
+
+.main {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #ffef00 50%, #000000 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.main-box div {
+    padding: 16px;
+    border-right: 8px solid #ffffff;
+    text-align: end;
+    opacity: 0;
+    animation: main-box-div-load 1s ease-out 1.8s forwards;
+}
+
+.main-box div h1 {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.main-box div p {
+    margin-top: 0;
+    margin-bottom: 64px;
+    color: #ffffff;
+    font-family: 'Arial';
+    font-size: 24px;
+}
+
+.main-box img {
+    height: 200px;
+    width: 200px;
+    margin-left: 16px;
+    border-top: 10px solid #000000;
+    border-right: 10px solid #000000;
+    border-left: 10px solid #ffef00;
+    border-bottom: 10px solid #ffef00;
+    opacity: 0;
+    animation: main-box-img-load 1s ease-out 1.8s forwards;
+}
+
+@keyframes main-box-div-load {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes main-box-img-load {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 824px) {
+    .main-box {
+        transform: scale(0.50);
+        min-width: 780px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-box {
+        transform: scale(0.25);
+        min-width: 780px;
+    }
+}
+
+/* End of CSS for the main part of portfolio */
+
+/* Start of CSS for the about part of portfolio */
+
+.about {
+    background-image: url("../../resources/comp-bg.png");
+    background-size: cover;
+}
+
+.carousel div {
+    width: 50%;
+    margin: 0 auto;
+    padding: 16px 0 32px 0;
+}
+
+.carousel div ul {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    line-height: 300%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel .tech-stack ul li img {
+    height: 50px;
+    width: 50px;
+}
+
+.tech-stack ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.skills ul li div  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.skills ul li .skill-wrap  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 1368px) {
+    .carousel div h2 {
+        font-size: 28px;
+    }
+
+    .carousel div ul {
+        font-size: 18px;
+    }
+
+    .carousel .tech-stack ul li img {
+        height: 36px;
+        width: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel div h2 {
+        font-size: 16px;
+    }
+
+    .carousel div ul {
+        font-size: 10px;
+    }
+
+    .carousel .tech-stack ul li img {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media (max-width: 540px) {
+    .carousel div h2 {
+        font-size: 12px;
+    }
+
+    .carousel div ul {
+        font-size: 7px;
+    }
+
+    .carousel .tech-stack ul li img {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+/* End of CSS for the about part of portfolio */
+
+/* Start of CSS for the projects part of portfolio */
+
+.projects {
+    background-image: linear-gradient(to bottom, #000000 50%, #ffffff 50%);
+    padding-top: 64px;
+    text-align: center;
+    
+}
+
+.projects .proj-heading {
+    color: #ffffff;
+    margin-bottom: 64px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 64px;
+    margin: 0 96px 64px;
+}
+
+/* End of CSS for the projects part of portfolio */
+
+/* Start of CSS for the contacts part of portfolio */
+
+.contact-me {
+    padding: 64px 0;
+    background-color: #ffef00;
+    text-align: center;
+}
+
+.contact-me p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* End of CSS for the contacts part of portfolio */

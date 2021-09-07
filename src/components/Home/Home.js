@@ -238,7 +238,7 @@ const Home = () => {
                     <ContactForm />
                 </Fade>
             </div>
-         </div> // container end
+         </div>
     )
 }
 

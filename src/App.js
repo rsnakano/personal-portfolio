@@ -8,6 +8,7 @@ function App() {
     <div>
       <Toolbar />
       <Switch>
+        {/* Add routes here */}
         <Route path='/'>
           <Home />
         </Route>

@@ -1,4 +1,4 @@
-<p align='center'> <img src='./src/resources/my-logo-black.png' alt='author logo' /> </p>
+<p align='center'> <img src='./src/resources/my-logo-black.png' alt='author logo' width='100px' height='100px' /> </p>
 
 # <p align='center'> **ryonakano.com - 2.0** </p>
 

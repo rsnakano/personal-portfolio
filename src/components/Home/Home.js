@@ -6,17 +6,17 @@ import ContactForm from '../ContactForm/ContactForm'
 import { Fade } from 'react-reveal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
-import profpic from '../../resources/profpic.png'
+import profpic from '../../resources/profpic.webp'
 import android from '../../resources/android-icon.png'
 import react from '../../resources/reactjs-icon.png'
 import github from '../../resources/git-icon.png'
 import algo from '../../resources/algo-icon.png'
 import cpu from '../../resources/cpu-icon.png'
-import fms from '../../resources/fms-app.jpg'
-import portfolio from '../../resources/portfolio.PNG'
-import memories from '../../resources/memories-app.jpg'
-import pikabot from '../../resources/pikabot.PNG'
-import istartup from '../../resources/istartup.png'
+import fms from '../../resources/fms-app.webp'
+import portfolio from '../../resources/portfolio.webp'
+import memories from '../../resources/memories-app.webp'
+import pikabot from '../../resources/pikabot.webp'
+import istartup from '../../resources/istartup.webp'
 import mipscode from '../../resources/mips-code.PNG'
 
 
@@ -26,7 +26,7 @@ const Home = () => {
             <Particles className='particles' params={{
                 particles: {
                     number: {
-                        value: 125,
+                        value: 160,
                         density: {
                         enable: true,
                         value_area: 950,

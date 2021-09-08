@@ -12,6 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   height: 100%;
   padding: 0 12px 0 24px;
 }
@@ -19,7 +20,7 @@ nav {
 nav img {
   height: 40px;
   width: 40px;
-  transition-duration: 400ms;
+  transition-duration: 0.4s;
   opacity: 0;
   animation: logo-load 1s ease-in 0s forwards;
 }
@@ -82,5 +83,12 @@ nav img:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* 500% zoom on chrome */
+@media (max-width: 420px) {
+  .nav-items li {
+    padding-right: 12px;
   }
 }

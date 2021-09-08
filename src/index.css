@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Alata';
-  src: local('Alata'), url(./resources/fonts/Alata-Regular.ttf) format('truetype');
+  src: local('Alata'), 
+  url(./resources/fonts/alata-v2-latin-regular.woff2) format('woff2'),
+  url(./resources/fonts/alata-v2-latin-regular.woff) format('woff');
 }
 
 html {

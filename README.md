@@ -17,6 +17,7 @@
 | Color         | Hex           | 
 |:-------------:|:-------------:| 
 | Canary Yellow | `#ffef00`     |
+| Ochre Yellow  | `#e8b200`     |
 | Black         | `#000000`     |
 | White         | `#ffffff`     |  
 

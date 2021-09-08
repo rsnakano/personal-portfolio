@@ -44,3 +44,10 @@
     background-color: #ffef00;
     color: #000000;
 }
+
+/* 300%/400% zoom on chrome */
+@media (max-width: 640px) {
+    .flex-row div {
+        width: 100%;
+    }
+}

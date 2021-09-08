@@ -26,7 +26,7 @@ const Home = () => {
             <Particles className='particles' params={{
                 particles: {
                     number: {
-                        value: 125,
+                        value: 160,
                         density: {
                         enable: true,
                         value_area: 950,

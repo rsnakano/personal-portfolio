@@ -19,3 +19,7 @@
 | Canary Yellow | `#ffef00`     |
 | Black         | `#000000`     |
 | White         | `#ffffff`     |  
+
+## Acknowledgment
+
+Thanks to Hans, Julian, and Phillip for their valuable feedback! 

@@ -203,7 +203,7 @@ h2 {
 /* Start of CSS for the projects part of portfolio */
 
 .projects {
-    background-image: linear-gradient(to bottom, #000000 50%, #ffffff 50%);
+    background-image: linear-gradient(to bottom, #000000 50%, #ffef00 50%);
     padding-top: 64px;
     text-align: center;
     
@@ -219,7 +219,8 @@ h2 {
     justify-content: center;
     flex-flow: row wrap;
     gap: 64px;
-    margin: 0 auto 64px;
+    margin: 0 auto;
+    padding-bottom: 64px;
 }
 
 /* End of CSS for the projects part of portfolio */

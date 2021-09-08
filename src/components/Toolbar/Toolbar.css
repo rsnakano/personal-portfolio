@@ -30,10 +30,10 @@ nav img:hover {
 }
 
 .nav-items ul {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
+  list-style: none;
 }
 
 .nav-items li {
@@ -60,6 +60,7 @@ nav img:hover {
 .nav-items a {
   color: black;
   text-decoration: none;
+  transition-duration: 0.2s;
 }
 
 .nav-items a:hover,

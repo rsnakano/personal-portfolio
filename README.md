@@ -10,7 +10,7 @@
     A fully frontend web app built with HTML/CSS and Javascript, utilizing the ReactJS Framework.
 </p>
 
-<p align='center'> <img src='./src/resources/portfolio.PNG' alt='main part of site' /></p>
+<p align='center'> <img src='./src/resources/portfolio.webp' alt='main part of site' /></p>
 
 ## Color Profile
 

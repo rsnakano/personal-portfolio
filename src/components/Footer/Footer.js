@@ -23,7 +23,7 @@ const Footer = () => {
             <p>Icons by <a href='https://icons8.com/' target="_blank" 
             rel="noopener noreferrer">icons8</a>
             </p>
-            <p>&copy; 2021 Ryosuke Nakano | CC BY-SA</p>
+            <p>&copy; 2023 Ryosuke Nakano | CC BY-SA</p>
         </footer>
     )
 }

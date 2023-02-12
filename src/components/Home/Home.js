@@ -1,23 +1,23 @@
 import Particles from 'react-particles-js'
 import { Carousel } from 'react-responsive-carousel'
-import ProgressBar from '@ramonak/react-progress-bar'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import ContactForm from '../ContactForm/ContactForm'
 import { Fade } from 'react-reveal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './Home.css'
-import profpic from '../../resources/profpic.webp'
+import profpic from '../../resources/profpic.jpg'
+import laravel from '../../resources/laravel-icon.png'
 import android from '../../resources/android-icon.png'
 import react from '../../resources/reactjs-icon.png'
 import github from '../../resources/git-icon.png'
 import algo from '../../resources/algo-icon.png'
-import cpu from '../../resources/cpu-icon.png'
 import fms from '../../resources/fms-app.webp'
+import up from '../../resources/up-v-ikot.jpg'
+import bugtrack from '../../resources/bug-tracker.jpg'
+import proximic from '../../resources/proximic.jpg'
 import portfolio from '../../resources/portfolio.webp'
 import memories from '../../resources/memories-app.webp'
-import pikabot from '../../resources/pikabot.webp'
 import istartup from '../../resources/istartup.webp'
-import mipscode from '../../resources/mips-code.PNG'
 
 
 const Home = () => {
@@ -64,6 +64,10 @@ const Home = () => {
                         <h2>&lt;My Tech Stack /&gt;</h2>
                         <ul>
                             <li>
+                                <span>Back-End Web Development</span>
+                                <img src={laravel} alt='reactjs icon'/>
+                            </li>
+                            <li>
                                 <span>Android Development</span>
                                 <img src={android} alt='android icon'/>
                             </li>
@@ -79,79 +83,66 @@ const Home = () => {
                                 <span>Data Structures & Algorithms</span>
                                 <img src={algo} alt='tree structure icon'/>
                             </li>
-                            <li>
-                                <span>MIPS Assembly</span>
-                                <img src={cpu} alt='cpu icon'/>
-                            </li>
 
                             {/* Add more to your tech stack here */}
                         </ul>
                     </div>
                     <div className='skills'>
-                        <h2>&lt;Languages & Frameworks /&gt;</h2>
+                        <h2>&lt;Languages /&gt;</h2>
                         <ul>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>Python</span>
-                                    <ProgressBar completed={85} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
-                        </li>
-                            <li>
-                                <div className='skill-wrap'>
-                                    <span>Kotlin</span>
-                                    <ProgressBar completed={70} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>Python</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>Android XML</span>
-                                    <ProgressBar completed={70} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>Kotlin</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>C/C++</span>
-                                    <ProgressBar completed={55} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>PHP</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>HTML/CSS</span>
-                                    <ProgressBar completed={50} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>C/C++</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>ReactJS</span>
-                                    <ProgressBar completed={50} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>HTML/CSS</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>JavaScript</span>
-                                    <ProgressBar completed={40} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>JavaScript</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'> 
-                                    <span>MIPS Assembly</span>
-                                    <ProgressBar completed={20} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>SQL</span>
                             </li>
                             <li>
-                                <div className='skill-wrap'>
-                                    <span>MATLAB</span>
-                                    <ProgressBar completed={15} bgColor='#000000' height='16px' width='90%' margin='auto' labelSize='13px' baseBgColor='#ffffff' />
-                                </div>
+                                <span>C#</span>
                             </li>
 
                             {/* Add more to your languages and frameworks here */}
+                        </ul>
+                        <h2>&lt;Frameworks /&gt;</h2>
+                        <ul>
+                            <li>
+                                <span>Laravel</span>
+                            </li>
+                            <li>
+                                <span>Android XML</span>
+                            </li>
+                            <li>
+                                <span>Vue.js</span>
+                            </li>
+                            <li>
+                                <span>React.js</span>
+                            </li>
+                            <li>
+                                <span>MySQL</span>
+                            </li>
+                            <li>
+                                <span>Unity</span>
+                            </li>
                         </ul>
                     </div>
                     <div className='about-me'>
                         <h2>&lt;About Me /&gt;</h2>
                         <p>
-                            I'm a 20-year old student from the
+                            I'm a 21-year old student from the
                             Philippines currently taking up
                             Computer Science at the University of
                             the Philippines-Diliman. <br />
@@ -162,11 +153,10 @@ const Home = () => {
                             passion for Software Development—specifically 
                             for Web and Android—and
                             an unquenchable thirst for learning.
-                            My hobbies include watching movies and
-                            tv shows, playing video games, writing fiction, and playing
-                            basketball, among other things. When I'm
-                            not typing away at a keyboard, I'm trying
-                            learning Japanese (and ultimately struggling), 
+                            When I'm not typing away at a keyboard, I watch tv shows, 
+                            play video games, write fiction, and play
+                            flag football, among other things. Currently trying
+                            to learn Japanese (and ultimately struggling)
                             to get in touch with my half-roots.  
                         </p>
                     </div>
@@ -186,6 +176,24 @@ const Home = () => {
                         image={fms}
                         link='none' />
 
+                        <ProjectCard title='UP V-Ikot' 
+                        desc='An ongoing thesis project developed in Unity for Android devices. It is a mobile Augmented Reality
+                        campus tour application for new students and campus visitors of the University of the Philippines - Diliman.'
+                        image={up}
+                        link='none' />
+
+                        <ProjectCard title='Gamified Bug Tracker API' 
+                        desc='An independent project developed in Laravel. An API that features useful CRUD
+                        functionality for bug-tracking applications. Keeps track of scores, projects, users, bugs, and handles authentication.'
+                        image={bugtrack}
+                        link='https://github.com/rsnakano/gamified-bug-tracker' />
+
+                        <ProjectCard title='Proximic' 
+                        desc='A 2D virtual world with a proximity-based voice-chat feature made with React.js and HTML/CSS for the
+                        front-end and Firebase for the back-end.'
+                        image={proximic}
+                        link='https://proximic-a2a4e.web.app/' />
+
                         <ProjectCard title='Online Portfolio' 
                         desc='A fully front-end personal portfolio to showcase my skills, projects, and articles 
                         related to my tech journey. Developed using HTML/CSS and JavaScript, utilizing
@@ -199,26 +207,12 @@ const Home = () => {
                         image={memories}
                         link='https://github.com/rsnakano/memories-app' />
 
-                        <ProjectCard title='Pikachu Translator' 
-                        desc='A small and fun Twitter bot that translates tweets into pikachu&#39;s 
-                        &#39;language&#39;, which is basically just a bunch of random &#39;pika-pika&#39;s. 
-                        Made with Python and the Tweepy API.'
-                        image={pikabot}
-                        link='https://twitter.com/pikatranslate' />
-
                         <ProjectCard title='istartUP' 
                         desc='A prototype idea proposed by our team during the hackathon of a prominent organization 
                         in our campus. It aims to help online businesses get started on their journey toward 
                         financial freedom during trying times.'
                         image={istartup}
                         link='https://drive.google.com/drive/folders/1j78_pMiWCbaBGWplRC7d0EPYFEyAaCLj' />
-
-                        <ProjectCard title='Extending MIPS Processor' 
-                        desc='Our final project for a subject that involved extending the functionality of the
-                        MIPS single-cycle processor by way of adding additional instructions 
-                        using SystemVerilog and Vivado.'
-                        image={mipscode}
-                        link='none' />
 
                         {/* Add more projects here */}
                     </div>
